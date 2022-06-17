@@ -19,9 +19,8 @@ LazyData: true
 Depends:
   R (>= 3.0.2)
 Suggests:
-    dplyr,
     knitr,
-    ggplot,
+    ggplot2,
     rmarkdown,
     testthat (>= 2.1.0)
 RoxygenNote: 7.1.2

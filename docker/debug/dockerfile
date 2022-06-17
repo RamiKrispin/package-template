@@ -1,0 +1,6 @@
+# Using Rocker image with Rstudio and R v4.2.0
+# Docker Hub: https://hub.docker.com/r/rocker/rstudio/tags
+FROM rocker/rstudio:latest
+
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]

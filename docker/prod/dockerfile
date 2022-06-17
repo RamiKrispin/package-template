@@ -1,0 +1,10 @@
+# Using Rocker image with Rstudio and R v4.2.0
+# Docker Hub: https://hub.docker.com/r/rocker/rstudio/tags
+FROM rocker/rstudio:latest
+
+LABEL maintainers="Rami Krispin <rami.krispin@gmail.com>, Rahul Sangole <rahul.sangole@gmail.com>"
+
+RUN mkdir pkgs
+COPY *.R pkgs/
+
+RUN Rscript pkgs/install_packages.R

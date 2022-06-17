@@ -1,0 +1,14 @@
+on: [push, pull_request]
+
+name: R CMD
+jobs:
+  R-CMD-check:
+    name: R CMD check
+    runs-on: ubuntu-18.04
+    container:
+        image: rkrispin/package_template_dev:0.0.0.9000
+    steps:
+       - name: checkout_repo
+         uses: actions/checkout@v2
+       - name: Check
+         run: Rscript -e "rcmdcheck::rcmdcheck(args = '--no-manual', error_on = 'error')"

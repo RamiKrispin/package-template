@@ -8,7 +8,7 @@ Authors@R: c(person(given = "Rami",
                     role = c("aut", "cre")),
              person(given = "Rahul",
                     family = "Sangole",
-                    role = c("aut", "cre"),
+                    role = c("aut"),
                     email = "rahul.sangole@gmail.com"))
 Maintainer: Rami Krispin <rami.krispin@gmail.com>
 Description: The package provides an example to integration of Docker with R package development.

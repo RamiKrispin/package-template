@@ -4,7 +4,7 @@ cran_mirror <- "https://cran.rstudio.com/"
 quiet <- FALSE # Set TRUE for clean output, when testing or getting errors use FALSE
 
 # Set packages and their version (optional)
-pkg_list <- data.frame(package = c("knitr", "ggplot", "rmarkdown", "testthat"),
+pkg_list <- data.frame(package = c("knitr", "ggplot2", "rmarkdown", "testthat"),
                        version = c(NA, NA, NA, NA), 
                        stringsAsFactors = FALSE)
                 
